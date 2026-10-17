@@ -4,65 +4,69 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>   Mi persona favorita ❤️</title>
+<title>Mi persona favorita ❤️</title>
 <style>
 *{box-sizing:border-box}
-body{margin:0;background:#fbf5f0;color:#493632;font-family:Georgia,serif}
-header{min-height:88vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:30px 22px;background:linear-gradient(#34251c55,#34251c88),url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1400&q=85') center/cover;color:white}
-header p{font-size:12px;letter-spacing:4px;text-transform:uppercase}
-h1{font-size:clamp(40px,10vw,68px);font-weight:normal;margin:15px 0}
-header .intro{font-size:18px;line-height:1.8;max-width:440px}
-.heart{font-size:30px}
-section{max-width:850px;margin:auto;padding:55px 22px;text-align:center}
-h2{font-size:32px;font-weight:normal}
-p{line-height:1.9}
-.note{background:white;padding:28px;border-radius:4px;box-shadow:0 8px 30px #684a3910}
-.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
-.photo{min-height:150px;background:#eadbd1;border:1px dashed #bd9586;display:flex;align-items:center;justify-content:center;padding:14px;color:#795d53;font-size:14px}
-footer{text-align:center;padding:35px 15px;background:#eadbd1}
-button{border:0;border-radius:25px;padding:13px 22px;background:#956a62;color:white;font-size:15px}
-@media(min-width:600px){.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}}
+body{margin:0;background:#fbf4ed;color:#493832;font-family:Georgia,serif}
+.hero{min-height:85vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:30px 20px;color:white;background:linear-gradient(#49383255,#493832bb),url('https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=1200&q=80') center/cover}
+.hero h1{font-size:clamp(45px,12vw,72px);font-weight:normal;margin:20px 0}
+.hero p{font-size:19px;line-height:1.8;max-width:500px}
+.btn{background:#fff8f3;color:#684a45;padding:14px 22px;border-radius:30px;text-decoration:none}
+section{max-width:800px;margin:auto;padding:45px 20px}
+h2{text-align:center;font-weight:normal;font-size:32px}
+.lead{text-align:center;line-height:1.8}
+.paper{background:#fffdf9;border:1px solid #ead8cf;padding:25px;border-radius:5px}
+.letter p{font-size:17px;line-height:1.9;margin-bottom:18px}
+strong{color:#8c5558}
+.signature{text-align:right;font-style:italic}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.photo{min-height:150px;background:#f0e3da;border:1px dashed #c8a69a;display:flex;align-items:center;justify-content:center;text-align:center;padding:15px;color:#795b52}
+footer{text-align:center;background:#eadbd2;padding:30px;line-height:1.8}
 </style>
 </head>
 <body>
-<header>
-<div class="heart">♡</div>
-<p>Un pequeño rincón para ti</p>
-<h1> Mi persona favorita</h1>
-<div class="intro">“Mamá, si tuviera que elegir una y mil veces, siempre elegiría tenerte en mi vida. Este pequeño rincón es para ti, porque hay cosas que merecen ser recordadas todos los días.”</div>
-<p>Hecho con cariño, para ti ❤️</p>
+<header class="hero">
+<div>♡ PARA TI, MAMÁ ♡</div>
+<h1>Mi persona<br>favorita</h1>
+<p>Hay amores que hacen de nuestra vida un lugar más bonito. El tuyo es uno de ellos.</p>
+<a class="btn" href="#carta">Mamá, abre tu carta ♥</a>
 </header>
-<section>
-<h2>Para una persona especial</h2>
-<div class="note">
-<p>Quería crear un lugar donde los recuerdos bonitos pudieran quedarse, donde cada fotografía contara una historia y donde estas palabras te recordaran lo importante que eres.</p>
-<p>Gracias por formar parte de mi vida. Ojalá que cada vez que visites este pequeño rincón encuentres una razón para sonreír.</p>
-<div class="heart">♡</div>
-</div>
+
+<section id="carta">
+<h2>Una carta para ti</h2>
+<p class="lead">Para que puedas volver a estas palabras cada vez que quieras sentirme un poquito más cerca.</p>
+<article class="paper letter">
+<p>Mamá,</p>
+<p>No sé si alguna vez encontraré las palabras suficientes para agradecerte todo lo que has hecho por mí. Si hoy soy quien soy, es en gran parte gracias a ti, a tus sacrificios, a tus consejos, a tu paciencia y a ese amor que me has dado incluso en los momentos en los que quizás no supe valorarlo como merecía.</p>
+<p>Gracias por cada esfuerzo que hiciste para verme bien, por las veces que te preocupaste por mí en silencio, por cada abrazo que me dio fuerzas y por todas esas cosas que hiciste sin esperar nada a cambio. Quiero que sepas que las llevo conmigo y que forman parte de la persona que soy hoy.</p>
+<p>Ha pasado más de un año desde que la distancia nos separó físicamente. Más de un año sin poder compartir tantos momentos sencillos que ahora tienen un valor inmenso. Hay días en los que desearía poder estar ahí, abrazarte fuerte, sentarme a tu lado y conversar contigo sin tener que mirar un teléfono ni contar los kilómetros que nos separan.</p>
+<p>Pero si algo he aprendido durante este tiempo es que la distancia puede separar nuestros cuerpos, pero no tiene el poder de separar dos corazones que se aman de verdad.</p>
+<p>Mamá, aunque no pueda abrazarte todos los días, sigues estando presente en mi vida. Estás en mis pensamientos, en mis recuerdos y en muchas de las cosas que hago. Hay una parte de ti que viaja conmigo a dondequiera que voy, y esa parte nadie me la puede quitar.</p>
+<p><strong>Quiero que nunca dudes de algo: el amor que siento por ti sigue siendo el mismo y seguirá siéndolo, sin importar cuántos kilómetros haya entre nosotros ni cuánto tiempo tengamos que esperar para volver a abrazarnos.</strong></p>
+<p>La vida puede llevarnos por caminos diferentes y obligarnos a estar lejos de las personas que más queremos. Pero hay amores que permanecen, que resisten y que se hacen todavía más fuertes con el tiempo.</p>
+<p>Y el mío por ti es uno de ellos.</p>
+<p>No sé cuándo llegará el día de volver a estar juntos, pero espero ese momento con todo mi corazón. Imagino ese abrazo en el que no harán falta palabras, porque un solo abrazo podrá expresar todo lo que he sentido durante este tiempo lejos de ti.</p>
+<p>Hasta entonces, recuerda que tienes un lugar irremplazable en mi vida. Nada de lo que consiga, ningún lugar al que llegue y ninguna distancia que recorra cambiará el hecho de que eres mi mamá y de que siempre llevaré conmigo el amor que me has dado.</p>
+<p>Perdóname por las veces en que no supe expresar cuánto te quiero. Gracias por ser parte de mi historia, por todo lo que hiciste por mí y por ese amor que me acompañará durante toda mi vida.</p>
+<p><strong>Te quiero, mamá. Te quiero desde aquí, desde lejos, desde cada día que pasa y desde cada sueño que tengo. Y cuando por fin vuelva a abrazarte, quiero que sientas que, aunque haya pasado más de un año, mi corazón nunca se fue de tu lado.</strong></p>
+<p class="signature">Con todo mi amor,<br>Tu hijo, que te lleva siempre en el corazón. ❤️</p>
+</article>
 </section>
-<section>
+
+<section id="recuerdos">
 <h2>Nuestros recuerdos</h2>
-<p>Cada fotografía guarda un instante que merece ser recordado.</p>
+<p class="lead">Cada foto puede guardar una historia, una sonrisa o un momento que queremos conservar.</p>
 <div class="gallery">
-<div class="photo">📷 Recuerdo 1</div>
-<div class="photo">📷 Recuerdo 2</div>
-<div class="photo">📷 Recuerdo 3</div>
-<div class="photo">📷 Recuerdo 4</div>
-<div class="photo">📷 Recuerdo 5</div>
-<div class="photo">📷 Recuerdo 6</div>
+<div class="photo">♡<br>Foto especial 1</div>
+<div class="photo">♡<br>Foto especial 2</div>
+<div class="photo">♡<br>Foto especial 3</div>
+<div class="photo">♡<br>Foto especial 4</div>
+<div class="photo">♡<br>Foto especial 5</div>
+<div class="photo">♡<br>Foto especial 6</div>
 </div>
-<p style="font-size:13px">Pronto podremos colocar aquí nuestras fotografías favoritas.</p>
+<p class="lead">Los kilómetros nos separan; el amor nos mantiene cerca.</p>
 </section>
-<section>
-<h2>Un mensaje para ti</h2>
-<div class="note">
-<p>Si algún día necesitas recordar cuánto significas para mí, vuelve aquí. Los días pasan, las cosas cambian, pero los buenos recuerdos siempre merecen un lugar especial.</p>
-<p><strong>Con todo mi cariño ❤️</strong></p>
-</div>
-</section>
-<footer>
-<div class="heart">♥</div>
-<p>Un recuerdo bonito, guardado para siempre.</p>
-</footer>
+
+<footer>♥<br>Mi persona favorita, hoy y siempre.<br>Hecho con todo mi amor para mamá.</footer>
 </body>
 </html>
