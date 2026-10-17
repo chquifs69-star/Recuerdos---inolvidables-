@@ -114,5 +114,82 @@ footer{text-align:center;background:#eadbd2;padding:30px;line-height:1.8}
 </section>
 
 <footer>♥<br>Mi persona favorita, hoy y siempre.<br>Hecho con todo mi amor para mamá.</footer>
+<footer>♥<br>Mi persona favorita, hoy y siempre.<br>Hecho con todo mi amor para mamá.</footer>
+<!-- Botones de música y voz -->
+<div style="text-align:center;padding:20px;display:flex;flex-direction:column;align-items:center;gap:12px">
+  <button id="botonMusica" class="btn" style="border:0;font-family:Georgia,serif;font-size:16px;cursor:pointer">
+    🎵 Escuchar música
+  </button>
+
+  <button id="botonVoz" class="btn" style="border:0;font-family:Georgia,serif;font-size:16px;cursor:pointer">
+    🎙️ Escuchar mi voz
+  </button>
+</div>
+
+<audio id="musicaFondo" loop preload="none">
+  <source src="Ricardo%20Arjona%20-%20Mi%20Novia%20Se%20Me%20Est%C3%A1%20Poniendo%20Vieja%20%28Video%20Oficial%29%28MP3_160K%29.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="miVoz" preload="none">
+  <source src="PTT-20261017-WA0097.Opus" type="audio/ogg; codecs=opus">
+</audio>
+
+<script>
+const musica = document.getElementById('musicaFondo');
+const voz = document.getElementById('miVoz');
+const botonMusica = document.getElementById('botonMusica');
+const botonVoz = document.getElementById('botonVoz');
+
+botonMusica.addEventListener('click', async () => {
+  if (musica.paused) {
+    try {
+      await musica.play();
+      botonMusica.textContent = '⏸️ Pausar música';
+    } catch (e) {
+      alert('No se pudo reproducir la música. Comprueba que el archivo está subido a GitHub.');
+    }
+  } else {
+    musica.pause();
+    botonMusica.textContent = '🎵 Escuchar música';
+  }
+});
+
+botonVoz.addEventListener('click', async () => {
+  if (voz.paused) {
+    try {
+      await voz.play();
+      botonVoz.textContent = '⏸️ Detener mi voz';
+    } catch (e) {
+      alert('No se pudo reproducir la voz. Si el formato OPUS no es compatible, tendremos que convertirlo.');
+    }
+  } else {
+    voz.pause();
+    voz.currentTime = 0;
+    botonVoz.textContent = '🎙️ Escuchar mi voz';
+  }
+});
+
+voz.addEventListener('ended', () => {
+  botonVoz.textContent = '🎙️ Escuchar mi voz';
+});
+
+/* Corazones al abrir la página */
+window.addEventListener('load', () => {
+  for (let i = 0; i < 14; i++) {
+    setTimeout(() => {
+      const corazon = document.createElement('span');
+      corazon.className = 'corazon-flotante';
+      corazon.textContent = Math.random() > 0.5 ? '♥' : '♡';
+      corazon.style.left = Math.random() * 95 + 'vw';
+      corazon.style.fontSize = (16 + Math.random() * 18) + 'px';
+      document.body.appendChild(corazon);
+      setTimeout(() => corazon.remove(), 4500);
+    }, i * 250);
+  }
+});
+</script>
 </body>
+</html>
+ </body>
+</html>  </body>
 </html>
