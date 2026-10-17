@@ -5,37 +5,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mi persona favorita ❤️</title>
-   
-/* Corazones animados al abrir la página */
-.corazon-flotante {
-  position: fixed;
-  bottom: -40px;
-  z-index: 9999;
-  pointer-events: none;
-  animation: subirCorazon 4s ease-out forwards;
-  color: #e85d75;
-  line-height: 1;
-}
-
-@keyframes subirCorazon {
-  0% {
-    transform: translateY(0) rotate(0deg) scale(0.7);
-    opacity: 0;
-  }
-  15% {
-    opacity: 0.9;
-  }
-  100% {
-    transform: translateY(-100vh) rotate(35deg) scale(1.3);
-    opacity: 0;
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .corazon-flotante {
-    animation-duration: 1s;
-  }
-}
 <style>
 *{box-sizing:border-box}
 body{margin:0;background:#fbf4ed;color:#493832;font-family:Georgia,serif}
@@ -68,6 +37,38 @@ footer{text-align:center;background:#eadbd2;padding:30px;line-height:1.8}
   border-radius: 14px;
   display: block;
 }
+   
+/* Corazones animados al abrir la página */
+.corazon-flotante {
+  position: fixed;
+  bottom: -40px;
+  z-index: 9999;
+  pointer-events: none;
+  animation: subirCorazon 4s ease-out forwards;
+  color: #e85d75;
+  line-height: 1;
+}
+
+@keyframes subirCorazon {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(0.7);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(35deg) scale(1.3);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .corazon-flotante {
+    animation-duration: 1s;
+  }
+}
+
     </style>
 </head>
 <body>
